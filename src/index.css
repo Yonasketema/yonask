@@ -1,13 +1,113 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.sidebar {
+  animation: sidebar 1s ease-out;
+  animation-delay: 3s;
+  animation-fill-mode: backwards;
+}
+.intro {
+  animation: anime 1s ease-out;
+  animation-delay: 2s;
+  animation-fill-mode: backwards;
+}
+.contact,
+h1 {
+  animation: anime 2s ease-out;
+  animation-delay: 1s;
+  animation-fill-mode: backwards;
+}
+html {
+  scroll-behavior: smooth;
+}
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  padding: 4% 5% 0 5%;
+  background-color: #040303;
+  color: aliceblue;
+}
+a {
+  color: aliceblue;
+  text-decoration: none;
+}
+a:hover {
+  color: orange;
+  border-color: orange !important;
+}
+a > svg:hover {
+  color: orange;
+}
+ul {
+  list-style: none;
 }
 
+.y-letter {
+  display: none;
+}
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+@keyframes anime {
+  from {
+    opacity: 0;
+    transform: translateY(20%);
+  }
+  to {
+    transform: 1;
+  }
+}
+
+@keyframes sidebar {
+  from {
+    opacity: 0;
+  }
+  to {
+    transform: 1;
+  }
+}
+
+@media only screen and (max-width: 425px) {
+}
+
+@media only screen and (min-width: 600px) {
+  /*Big smartphones [426px -> 600px]*/
+}
+
+@media only screen and (max-width: 1200px) {
+  .imgs {
+    width: 100% !important;
+  }
+  .sidebar {
+    display: none !important;
+  }
+
+  .about {
+    flex-direction: column;
+    gap: 3rem;
+  }
+  .projects {
+    flex-direction: column;
+
+    gap: 3rem;
+  }
+  .heading {
+    flex-direction: column;
+    display: block !important;
+  }
+
+  .heading > h1 {
+    display: none !important;
+  }
+  .y-letter {
+    display: inline-block;
+  }
 }
