@@ -1,4 +1,4 @@
-import me from "../imgs/proimg";
+import me from "../imgs/proimg.jpg";
 
 const About = () => {
   return (
@@ -29,6 +29,7 @@ const About = () => {
             style={{
               width: "max(10rem, 21vw)",
               height: "60vh",
+              borderRadius: "30vh",
               backgroundImage: `linear-gradient(to top,#ffc94242,#ffc94247), url(${me})`,
               marginBottom: "1rem",
               backgroundPosition: "center",
