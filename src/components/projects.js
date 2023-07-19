@@ -28,6 +28,7 @@ const Project = ({ img, nav, navLink, gitLink, title, description }) => {
             backgroundColor: "transparent",
             border: "none",
             width: "1.5rem",
+            fontSize: "1.5rem",
           }}
         >
           <a href={gitLink}>
@@ -41,6 +42,7 @@ const Project = ({ img, nav, navLink, gitLink, title, description }) => {
               backgroundColor: "transparent",
               border: "none",
               width: "1.5rem",
+              fontSize: "1.5rem",
             }}
           >
             <a href={navLink} target="blank">
