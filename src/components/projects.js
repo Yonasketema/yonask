@@ -1,32 +1,25 @@
-const Project = ({ img, nav, navLink, gitLink, width, title }) => {
+import * as React from "react";
+import Card from "@mui/material/Card";
+import CardActions from "@mui/material/CardActions";
+import CardContent from "@mui/material/CardContent";
+import CardMedia from "@mui/material/CardMedia";
+import Typography from "@mui/material/Typography";
+
+const Project = ({ img, nav, navLink, gitLink, title, description }) => {
   return (
-    <div>
-      {" "}
-      <div
-        className="imgs"
-        style={{
-          width: width,
-          height: "60vh",
-          backgroundImage: `linear-gradient(to top,#282c3367,#282c3963), url(${img})`,
-          marginBottom: "1rem",
-          backgroundPosition: "center",
-          backgroundSize: "cover",
-        }}
-      ></div>
-      <p
-        style={{
-          marginBottom: "1rem",
-        }}
-      >
-        {title}
-      </p>
-      <div
-        style={{
-          display: "flex",
-          gap: "2rem",
-          marginBottom: "3rem",
-        }}
-      >
+    <Card
+      sx={{ maxWidth: 412, backgroundColor: "#212121", marginBottom: "12%" }}
+    >
+      <CardMedia component="img" alt="green iguana" height="212" image={img} />
+      <CardContent>
+        <Typography gutterBottom variant="h5" color="#fff" component="div">
+          {title}
+        </Typography>
+        <Typography variant="body2" color="#fff">
+          {description}
+        </Typography>
+      </CardContent>
+      <CardActions>
         <button
           style={{
             color: "#fff",
@@ -81,8 +74,8 @@ const Project = ({ img, nav, navLink, gitLink, width, title }) => {
             </a>
           </button>
         )}
-      </div>
-    </div>
+      </CardActions>
+    </Card>
   );
 };
 
