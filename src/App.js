@@ -1,12 +1,12 @@
 import "./App.css";
-import Project from "./projects";
+import Project from "./components/projects";
 import bookstroe from "./imgs/bookstroe";
 import ethio from "./imgs/ethio.png";
 import guzoweb from "./imgs/GuzoAdwa.png";
-import About from "./about";
-import Header from "./header";
-import SideBar from "./sideBars";
-import Footer from "./footer";
+import About from "./components/about";
+import Header from "./components/header";
+import SideBar from "./components/sideBars";
+import Footer from "./components/footer";
 
 function App() {
   return (

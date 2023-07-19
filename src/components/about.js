@@ -1,4 +1,4 @@
-import me from "./imgs/proimg";
+import me from "../imgs/proimg";
 
 const About = () => {
   return (
