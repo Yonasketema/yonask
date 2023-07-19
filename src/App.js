@@ -31,7 +31,7 @@ function App() {
             alignItems: "center",
           }}
         >
-          <h1 style={{ fontSize: "12vw", color: "#FFB200" }}>Y</h1>
+          <h1 style={{ fontSize: "16vw", color: "#FFB200" }}>Y</h1>
           <div>
             <h1
               style={{
@@ -97,9 +97,9 @@ function App() {
           <div
             className="projects"
             style={{
-              display: "flex",
-              gap: "3rem",
               marginBottom: "2rem",
+              display: "grid",
+              gridTemplateColumns: "1fr 1fr",
             }}
           >
             <Project
@@ -118,15 +118,16 @@ function App() {
               gitLink="https://github.com/Yonasketema/ethiopia"
               img={ethio}
             />
+
+            <Project
+              title="Guzo Adwa"
+              nav={true}
+              width="60vw"
+              navLink="https://yonasketema.github.io/guzo-adwa/"
+              gitLink="https://github.com/Yonasketema/guzo-adwa"
+              img={guzoweb}
+            />
           </div>
-          <Project
-            title="Guzo Adwa"
-            nav={true}
-            width="60vw"
-            navLink="https://yonasketema.github.io/guzo-adwa/"
-            gitLink="https://github.com/Yonasketema/guzo-adwa"
-            img={guzoweb}
-          />
         </div>
       </section>
       <Footer />
