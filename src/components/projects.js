@@ -6,8 +6,17 @@ import CardMedia from "@mui/material/CardMedia";
 import Typography from "@mui/material/Typography";
 import { FiGithub } from "react-icons/fi";
 import { BiLinkExternal } from "react-icons/bi";
+import Stacks from "./Stack";
 
-const Project = ({ img, nav, navLink, gitLink, title, description }) => {
+const Project = ({
+  img,
+  nav,
+  navLink,
+  gitLink,
+  title,
+  description,
+  stacks,
+}) => {
   return (
     <Card
       sx={{ maxWidth: 412, backgroundColor: "#212121", marginBottom: "12%" }}
@@ -17,7 +26,8 @@ const Project = ({ img, nav, navLink, gitLink, title, description }) => {
         <Typography gutterBottom variant="h5" color="#fff" component="div">
           {title}
         </Typography>
-        <Typography variant="body2" color="#fff">
+        <Stacks stacks={stacks} />
+        <Typography variant="body2" color="#777">
           {description}
         </Typography>
       </CardContent>
