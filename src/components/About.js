@@ -1,19 +1,32 @@
+import Typography from "@mui/material/Typography";
 import me from "../imgs/proimg.jpg";
 
 const About = () => {
   return (
     <div id="about" style={{ marginBottom: "7rem" }}>
-      <h1 style={{ textAlign: "center", marginBottom: "7rem" }}>፩ About Me</h1>
+      <h1
+        style={{ textAlign: "center", marginTop: "3rem", marginBottom: "5rem" }}
+      >
+        ፩ About Me
+      </h1>
       <div
         className="about"
         style={{
           display: "flex",
-          justifyContent: "space-around",
+          justifyContent: "space-between",
           alignItems: "center",
+          gap: "20%",
+          padding: "5% 10%",
         }}
       >
-        <div style={{ width: "30vw" }}>
-          <p>
+        <div>
+          <Typography
+            gutterBottom
+            variant="body3"
+            color="#eee"
+            component="div"
+            style={{ lineHeight: "1.5" }}
+          >
             Hello!my name is yonas. I like blending colors to create new ones.
             My fascination with web programming began when a friend showed me a
             hello world html web page. That day inspired me to succeed as a web
@@ -22,7 +35,7 @@ const About = () => {
             is Ethiopia, where design began in a cave. This led me to seek for
             my own design system, habesha theme, in order to present you with a
             more distinct and engaging experience .
-          </p>
+          </Typography>
         </div>
         <div>
           <div
