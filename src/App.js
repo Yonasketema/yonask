@@ -58,7 +58,6 @@ function App() {
           className="intro"
           style={{
             width: "50%",
-
             color: "#9999",
             marginBottom: "6rem",
           }}
@@ -81,7 +80,7 @@ function App() {
 
       <section
         style={{
-          padding: "5% 10%",
+       
           lineHeight: "1.3",
         }}
       >
@@ -100,7 +99,8 @@ function App() {
             style={{
               marginBottom: "2rem",
               display: "grid",
-              gridTemplateColumns: "1fr 1fr",
+              gridTemplateColumns: "repeat(auto-fill, minmax(50%, 1fr))",
+               placeItems: "center",
             }}
           >
             <Project
