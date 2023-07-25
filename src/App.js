@@ -1,12 +1,14 @@
 import "./App.css";
-import Project from "./components/projects";
-import bookstroe from "./imgs/bookstroe";
+import bookstore from "./imgs/bookstore.png";
+import hahu from "./imgs/hahu.jpeg";
+import shopia from "./imgs/shopia.png";
 import ethio from "./imgs/ethio.png";
 import guzoweb from "./imgs/GuzoAdwa.png";
-import About from "./components/about";
-import Header from "./components/header";
-import SideBar from "./components/sideBars";
-import Footer from "./components/footer";
+import About from "./components/About";
+import Header from "./components/Header";
+import SideBar from "./components/SideBars";
+import Footer from "./components/Footer";
+import Project from "./components/Projects";
 
 function App() {
   return (
@@ -61,8 +63,7 @@ function App() {
             marginBottom: "6rem",
           }}
         >
-          Allow me to connect you to the internet using a custom habesha theme
-          and alfabet.
+          Full stack developer.
         </p>
 
         <a
@@ -103,11 +104,24 @@ function App() {
             }}
           >
             <Project
-              nav={false}
+              nav={true}
               gitLink="https://github.com/Yonasketema/bookstore-react"
-              img={bookstroe}
+              navLink="https://shopia-et.vercel.app/"
+              img={shopia}
               width="20vw"
-              title="Book Store"
+              title="Shopia"
+              stacks={["React", "TypeScript", "Django"]}
+              description="Ethiopian shopping store"
+            />
+
+            <Project
+              title="Hahu App"
+              nav={false}
+              width="40vw"
+              gitLink="https://github.com/Yonasketema/hahu-hiking"
+              img={hahu}
+              stacks={["React-Native", "Django"]}
+              description="Travel planning app build with react native & django"
             />
 
             <Project
@@ -117,6 +131,7 @@ function App() {
               navLink="https://yonasketema.github.io/ethiopia"
               gitLink="https://github.com/Yonasketema/ethiopia"
               img={ethio}
+              stacks={["Html", "Sass"]}
             />
 
             <Project
@@ -126,6 +141,17 @@ function App() {
               navLink="https://yonasketema.github.io/guzo-adwa/"
               gitLink="https://github.com/Yonasketema/guzo-adwa"
               img={guzoweb}
+              stacks={["Html", "Css"]}
+            />
+
+            <Project
+              nav={false}
+              gitLink="https://github.com/Yonasketema/bookstore-react"
+              img={bookstore}
+              width="20vw"
+              title="Book Store"
+              stacks={["React", "Node"]}
+              description="Designed user-friendly full stack web application to allow users to search, save, and view pinned books."
             />
           </div>
         </div>
