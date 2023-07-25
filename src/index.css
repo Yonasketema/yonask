@@ -83,6 +83,7 @@ code {
 }
 
 @media only screen and (max-width: 1200px) {
+  
   .imgs {
     width: 100% !important;
   }
@@ -102,10 +103,12 @@ code {
   .heading {
     flex-direction: column;
     display: block !important;
+    margin-top: 3rem;
   }
 
   .heading > h1 {
     display: none !important;
+   
   }
   .y-letter {
     display: inline-block;
