@@ -3,9 +3,9 @@ import me from "../imgs/proimg.jpg";
 
 const About = () => {
   return (
-    <div id="about" style={{ marginBottom: "7rem" }}>
+    <div id="about" style={{ marginBottom: "2rem" }}>
       <h1
-        style={{ textAlign: "center", marginTop: "3rem", marginBottom: "5rem" }}
+        style={{ textAlign: "center", marginTop: "3rem", marginBottom: "1.7rem" }}
       >
         ፩ About Me
       </h1>
@@ -39,6 +39,7 @@ const About = () => {
         </div>
         <div>
           <div
+              className="about__img"
             style={{
               width: "max(10rem, 21vw)",
               height: "60vh",

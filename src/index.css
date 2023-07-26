@@ -51,6 +51,12 @@ ul {
 .y-letter {
   display: none;
 }
+
+.footer__link{
+    display:none;
+  }
+
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
@@ -95,6 +101,9 @@ code {
     flex-direction: column;
     gap: 3rem;
   }
+  .about__img{
+    display:none;
+  }
   .projects {
     flex-direction: column;
 
@@ -112,5 +121,8 @@ code {
   }
   .y-letter {
     display: inline-block;
+  }
+  .footer__link{
+    display:flex;
   }
 }
